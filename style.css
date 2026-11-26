@@ -1225,7 +1225,7 @@ button:hover {
     box-shadow: 0 0 35px rgba(255,255,255,0.35);
 }
 .puzzle-piece {
-    background-image: url("photos/photo1.jpg");
+    background-image: url("photo1.jpg");
     background-size: 300% 300%;
     background-repeat: no-repeat;
     border-radius: 5px;
