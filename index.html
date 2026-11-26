@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hearts"></div>
+
+    <!-- PHOTOS FIRST -->
+    <div class="container" id="welcome">
+
+        <h1>📸 Beautiful Memories 📸</h1>
+        <div class="welcome-photos">
+
+    <div class="photo-card">
+        <img src="photos/photo1.jpg">
+        <p>Our Beautiful Memory ❤️</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo2.jpg">
+        <p>Our first pic ✨</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo3.jpg">
+        <p>Beautiful Times Together 💕</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo4.jpg">
+        <p>One Of My Favorite Memories 🌸</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo5.jpg">
+        <p>Forever A Special Moment ❤️</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo6.jpg">
+        <p>Memories That Make Us Smile 😊</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo7.jpg">
+        <p>Another Beautiful Memory ✨</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo8.jpg">
+        <p>Moments Worth Keeping 💖</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo9.jpg">
+        <p>Sweet Memories 🌷</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo10.jpg">
+        <p>Always A Special Memory ❤️</p>
+    </div>
+
+    <div class="photo-card">
+        <img src="photos/photo11.jpg">
+        <p>The Best Memories ✨</p>
+    </div>
+
+</div>
+
+        <!-- OPEN SURPRISE -->
+        <div class="surprise-button-area">
+
+            <h2>✨ A Special Surprise Awaits ✨</h2>
+
+            <button onclick="document.getElementById('codeBox').style.display='block'">
+    🎁 Open Your Surprise
+</button>
+            <div id="codeBox" class="code-box">
+
+    <h2>🔐 Enter the Secret Code</h2>
+
+    <p>Only you know the magic code 😉</p>
+
+    <input
+        type="password"
+        id="secretCode"
+        placeholder="Enter code"
+    >
+
+    <button onclick="checkCode()">
+        🔓 Unlock Surprise
+    </button>
+
+    <p id="codeMessage"></p>
+
+</div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BIRTHDAY CONTENT -->
+    <div class="birthday" id="birthday">
+    <div id="countdown" class="countdown">
+    <span id="countdownNumber">3</span>
+</div>    
+        <div id="balloons"></div>
+        <div id="confetti"></div>
+        <div id="fireworks"></div>
+
+        <h1 class="birthday-title">
+            🎉 <span>HAPPY BIRTHDAY</span> 🎉
+        </h1>
+
+        <h2>🥳 My Special one 🥳</h2>
+
+        <p>
+            Wishing you a day filled with happiness,
+            beautiful memories and lots of smiles! ❤️
+        </p>
+
+
+        <!-- CAKE -->
+        <div class="cake">🎂</div>
+
+        <button onclick="celebrate()">
+            🎊 Celebrate!
+        </button>
+
+
+        <!-- MAKE A WISH -->
+        <div class="wish-section">
+
+            <h2>🎂 Make a Wish 🎂</h2>
+
+            <div class="wish-cake" onclick="makeWish()">
+                🎂
+            </div>
+
+            <p id="wishText">
+                Tap the cake and make a wish! ✨
+            </p>
+
+        </div>
+
+
+        <!-- LETTER -->
+        <div class="letter-section">
+
+            <h2>💌 A Special Message For You</h2>
+
+            <div class="envelope" onclick="openLetter()">
+                <div class="envelope-flap">💌</div>
+                <div class="letter-icon">✉️</div>
+                <p>Tap to Open Your Letter</p>
+            </div>
+
+            <div class="letter" id="letter">
+
+                <h2>💖 A Special Message For You</h2>
+
+                <p>
+                    Wishing you a beautiful birthday filled with
+                    happiness, smiles and unforgettable memories. ✨
+                </p>
+
+                <p>
+                    May every new day bring you closer to your dreams
+                    and may your life always be filled with wonderful moments. ❤️
+                </p>
+                <p>
+                    happy birthday to my favourite human everrr!!  another year older, but honestly, the maturity is still loading 🤗 thank you for being my unpaid therapist, my personal comedian, my partner in crime, and the person who makes even the most boring days feel special. life would be so boring
+without your nonsense, our random talks, our
+stupid jokes, and the memories that we'll probably laugh about even when we're old and wrinkly 🫶hope this year brings you all the happiness, love, 
+success, and pretty little moments your heart deserves. never forget how special you are to me, even though you annoy me like it's your full-time
+job 🫣💞 may all your wishes come true, may your smile never fade, and may you always have money because friendship is beautiful but being broke together is a different kind of struggle ❤️💖 love you more than words can explain, even if i bully you 24/7.no matter how much life changes, i hope
+we always find our way back to each other, laughing at the same stupid things. happy birthday, my forever favourite headache. stay
+pretty, stay crazy, and never stop being YOU🫂🤍🫶💗
+                </p>
+
+                <p>
+                    🎂 Happy Birthday Once Again! 🎉
+                </p>
+
+                <button onclick="closeLetter()">
+                    Close 💌
+                </button>
+
+            </div>
+
+        </div>
+<div class="memory-puzzle">
+
+    <h2>🧩 Unlock a Special Memory</h2>
+
+    <p>Arrange the pieces to reveal the memory ❤️</p>
+    <button onclick="showPuzzleHint()" class="hint-button">
+    💡 Show Me a Hint
+</button>
+
+    <div id="puzzle"></div>
+
+    <p id="puzzleMessage"></p>
+
+</div>
+
+        <!-- VIDEO -->
+        <div class="video-section">
+
+            <h2>🎬 A Special Memory</h2>
+
+            <div class="video-frame">
+
+                <video controls>
+                    <source src="videos/birthday.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>
+
+            </div>
+
+            <p class="video-caption">
+                ✨ A beautiful memory worth watching again ✨
+            </p>
+
+        </div>
+
+
+        <!-- MUSIC -->
+        <div class="music-section">
+
+            <h2>🎵 Birthday Music 🎵</h2>
+
+            <div class="music-visualizer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>🎶 Enjoy the music and the memories ❤️</p>
+
+            <button class="music-button" onclick="playBirthdayMusic()">
+    ▶️ Play Birthday Music 🎵
+</button>
+
+<audio id="birthdayMusic" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+        </div>
+
+
+        <!-- FINAL GIFT -->
+        <div class="final-surprise">
+
+            <h2>🎁 One Last Surprise 🎁</h2>
+
+            <div class="gift-box" onclick="openGift()">
+                🎁
+            </div>
+
+            <p>
+                Tap the gift to open your surprise ✨
+            </p>
+
+            <div id="finalMessage" class="final-message">
+
+                <h2>💖 You Are Truly Special 💖</h2>
+
+                <p>
+                    May your life always be filled with happiness,
+                    beautiful memories, success and lots of smiles! ✨
+                </p>
+
+                <p>
+                    🎉 Happy Birthday Once Again! 🎂❤️
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ENDING -->
+        <div class="ending-section">
+
+            <div class="ending-content">
+
+                <div class="ending-heart">❤️</div>
+
+                <h1>✨ You Are Truly Special ✨</h1>
+
+                <p>
+                    May your life always be filled with happiness,
+                    love, success and beautiful memories. 🌸
+                </p>
+
+                <h2>🎂 Happy Birthday Once Again! 🎉</h2>
+
+                <div class="ending-stars">
+                    ✨ ⭐ ✨ ⭐ ✨
+                </div>
+
+                <button
+                    class="replay-button"
+                    onclick="replaySurprise()">
+                    🔄 Replay Surprise
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
